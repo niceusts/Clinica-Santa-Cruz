@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    text-decoration: none !important;
+    font-family: Helvetica, sans-serif;
+}
+
+#areasSection li {
+    display: block;
+}
+.listInfo li{
+    display: block;
+}
+.customerService li{
+    display: block;
+}
+
+#servicesHome, #aboutHome, #infoContact{
+    margin: 3rem 5rem;
+}
+
+#servicesHome .services{
+    display: flex;
+}
+
+#servicesHome .services a{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#servicesHome i{
+    color: #00888d;
+    font-weight: 700;
+}
+
+#infoContact i {
+    color: #00888d;
+    font-weight: 700;
+}
+
+#aboutHome i {
+    color: #00888d;
+    font-weight: 700;
+}
+
+#servicesHome, #infoContact, #aboutHome h2{
+    color: rgb(72, 72, 72);
+}
+
+ol, ul{
+    color: azure;
+    margin-top: 1rem !important;
+}
+
+ol {
+    counter-reset: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    list-style: none;
+    margin: 1.75rem 0;
+    padding-left: 1rem;
+}
+
+ol>li {
+    background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    counter-increment: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 1rem;
+    padding: 0.5rem 0rem 0.5rem 2rem;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+}
+
+ol>li::before {
+    background: linear-gradient(135deg, #00888d 0%, #08c4a3 100%);
+    border-radius: 1rem 1rem 0 1rem;
+    content: '';
+    height: 2rem;
+    left: -1rem;
+    overflow: hidden;
+    position: absolute;
+    top: -0.02rem;
+    width: 2rem;
+    align-items: flex-end;
+    content: counter(linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%));
+    color: black;
+    display: flex;
+    font: 900 1.5em/1 'Montserrat';
+    justify-content: flex-end;
+    padding: 0.125em 0.25em;
+    z-index: 1;
+}
+
+.infHead {
+    min-height: 2rem;
+    display: grid;
+    align-content: center;
+    background-color: #00888d;
+}
+
+.infHead ul>div li {
+    display: inline-block;
+}
+
+.infHead a {
+    margin-right: 0.3rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.infHead i {
+    font-size: 0.7rem;
+    margin-right: 0.2rem;
+
+}
+
+.listInfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+#identHome {
+    display: flex;
+    justify-content: space-around;
+    min-height: 7rem;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    align-items: center;
+}
+
+#identHome ul {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.inconPhone {
+    border: 1px solid #00888d;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.inconPhone i {
+    padding: 0.7rem;
+    color: #00888d;
+}
+
+.customerService {
+    text-align: end;
+}
+
+.customerService b{
+    color: gray;
+}
+
+.customerService .phone {
+    color: #00888d;
+    font-weight: 600;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+}
+
+#areasSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+#areasSection ul>li {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+#areasSection a {
+    color: #00888d;
+    margin-right: 0.7rem;
+    font-weight: 600;
+}
+
+#imgHome {
+    display: block;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background: url('/img/medico-home.JPG');
+    background-size: cover;
+    margin: 0 auto;
+
+}
